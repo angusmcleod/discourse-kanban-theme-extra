@@ -313,18 +313,6 @@
       click(event) {
         event.preventDefault();
         DiscourseURL.routeTo(`${this.href}?board=default`);
-      },
-
-      @computed('tags')
-      showTags(tags) {
-        return settings.show_tags && tags.length;
-      },
-
-      @computed("topic.tags", "definition.params.tags")
-      tags(topicTags, definitionTag) {
-        return topicTags
-          .filter(t => t != definitionTag)
-          .map(t => renderTag(t));
       }
     })
   );
@@ -589,6 +577,18 @@
 
       click(event) {
         DiscourseURL.routeTo(this.topic.lastUnreadUrl);
+      },
+
+      @computed('tags')
+      showTags(tags) {
+        return settings.show_tags && tags.length;
+      },
+
+      @computed("topic.tags", "definition.params.tags")
+      tags(topicTags, definitionTag) {
+        return topicTags
+          .filter(t => t != definitionTag)
+          .map(t => renderTag(t));
       }
     })
   );
