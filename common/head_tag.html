@@ -693,17 +693,15 @@
     {{format-date topic.bumpedAt format="tiny" noTitle="true"}}
   </div>
 
-  {{#if showTags}}
-    <div class="card-row">
+  <div class="card-row">
+    {{#if showTags}}
       <div class="tags">
         {{#each tags as |tag|}}
           {{{tag}}}
         {{/each}}
       </div>
-    </div>
-  {{/if}}
+    {{/if}}
 
-  <div class="card-row">
     <div class="posters">
       {{#each topic.posters as |poster|}}
         <a href="{{poster.user.path}}" data-user-card="{{poster.user.username}}" class="{{poster.extraClasses}}">{{avatar poster avatarTemplatePath="user.avatar_template" usernamePath="user.username" namePath="user.name" imageSize="tiny"}}</a>
@@ -715,9 +713,9 @@
         {{d-icon 'user-plus'}}{{topic.assigned_to_user.username}}
       </a>
     {{/if}}
-  </div>
 
-  {{plugin-outlet name="kanban-card-bottom" args=(hash topic=topic)}}
+    {{plugin-outlet name="kanban-card-bottom" args=(hash topic=topic)}}
+  </div>
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/kanban-card-bottom/kanban-voting">

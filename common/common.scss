@@ -137,10 +137,18 @@
 					flex-grow: 0
 				}
 
+				.topic-title {
+					margin-bottom: 3px;
+				}
+
 				.posters, .topic-title{
 					flex-grow: 1;
 					word-wrap: break-word;
 					overflow:hidden;
+				}
+
+				.tags {
+					margin-right: 10px;
 				}
 
 				.relative-date{
