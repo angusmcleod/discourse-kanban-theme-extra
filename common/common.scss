@@ -184,19 +184,19 @@
 
 .tags {
 	a.discourse-tag[data-tag-name="tag1"] {
-		background-color: green;
+		background-color: rgb(101, 200, 91);
 		padding: 0 10px;
 		color: white !important;
 		border-radius: 15px;
 	}
 	a.discourse-tag[data-tag-name="tag2"] {
-		background-color: pink;
+		background-color: rgb(255, 140, 50);
 		padding: 0 10px;
 		color: white !important;
 		border-radius: 15px;
 	}
 	a.discourse-tag[data-tag-name="tag3"] {
-		background-color: red;
+		background-color: rgb(255, 0, 32);
 		padding: 0 10px;
 		color: white !important;
 		border-radius: 15px;
