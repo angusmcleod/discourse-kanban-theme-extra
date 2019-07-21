@@ -13,7 +13,3 @@ en:
     apply: Apply
   theme_metadata:
     description: This theme component allows you to view and organise topics using a kanban board interface. A new tab "board" will be added to the top of the screen.
-  show_tags:
-    default: false
-    description:
-      en: Show tags on topic cards.
