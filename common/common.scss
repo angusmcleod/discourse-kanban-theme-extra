@@ -183,7 +183,10 @@
 }
 
 .tags {
-	a[data-tag-name="tag2"] {
+	a.discourse-tag[data-tag-name="tag2"] {
 		background-color: #FF69B4;
+		padding: 0 10px;
+		color: white !important;
+		border-radius: 15px;
 	}
 }
